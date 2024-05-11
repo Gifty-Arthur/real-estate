@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import background from "../../assets/Images/background.png";
+
+  
 import logo from '../../assets/Images/logo.png';
 import { IoCallOutline} from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { HiMiniXMark } from "react-icons/hi2";
+import { IoMdMenu } from "react-icons/io";
 
 
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] =useState(false);
+  const toggleMenu = () =>{
+    setIsMenuOpen(!isMenuOpen);
+  }
   
   const navItems =[
     {link: "Home", path: 'home'},
@@ -22,9 +29,10 @@ const Navbar = () => {
 
 
   return (
+    <>
     <nav 
-     className='min-h-screen bg-cover bg-center md:px-8 p-4 max-w-screen-2xl mx-auto '
-     style={{ backgroundImage: `url(${background})`, }}
+     className=' md:px-8 p-4 max-w-screen-2xl mx-auto fixed top-0 right-0 left-0'
+     
     >
       <div className='flex items-start justify-between px-4 py-4'>
         
@@ -63,11 +71,12 @@ const Navbar = () => {
 
     <IoCallOutline className='w-5 h- 5hover:text-customColor' />
 
-    <span class='relative top-[-2px] text-sm'>+6868588666</span>
+    <span my-class='relative top-[-2px] text-sm font-roboto'>+6868588666</span>
     <CgProfile className='ml-4 h-10 w-10 hover:text-customColor' />
   </a>
-          <button type="button" class=" w-40 h- 42.5 text-white-700 
+          <button className=" w-30 h- 42.5 text-white-700 
           hover:text-white border border-white 
+          
           hover:bg-white
           focus:outline-none 
           focus:ring-white
@@ -79,8 +88,51 @@ const Navbar = () => {
             dark:hover:bg-customColor dark:focus:ring-white">
             Add Property</button>
         </div>
-      </div>
+
+
+         {/* menu button only* display on mobile*/}
+         <div className='md:hidden'>
+          <button onClick={toggleMenu} className='text-white focus:outline-none text-lg
+          focus:text-gray-300'>{
+            isMenuOpen ? 
+            (<HiMiniXMark className='w-6 h-6 test-customColor'/>)
+             : (<IoMdMenu className='w-6 h-6 text-colorCustom text-lg'/>)
+          }
+
+          </button>
+         </div>
+
+         
+      </div> 
+    
+    
     </nav>
+
+  
+
+    <div className= {`space-y-2 px-4 pt-24 pb-5 bg-customColor ${isMenuOpen ? "block fixed top-0 right-0 " : "hidden"}`}>
+      
+          {
+            navItems.map(({link, path}) => 
+            <a key={link} href={path} className='flex items-center hover:text-blue-300
+
+             justify-between text-white text-sm '>{link}
+               <IoMdArrowDropdown  className='mr-1'/>
+              
+
+               
+              
+             </a>)
+             
+
+          }
+       
+       
+
+    </div>
+    </>
+
+    // navitems for mobile device 
   );
 }
 

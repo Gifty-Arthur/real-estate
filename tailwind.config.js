@@ -7,6 +7,12 @@ export default {
     extend: {
       colors:{
         customColor: '#E7C873'
+
+      
+      },
+
+      fontFamily: {
+        'roboto' :['Roboto", sans-serif'],
       }
       
     },
