@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <nav className=" md:px-8 p-4 max-w-screen-2xl mx-auto fixed top-0 right-0 left-0">
-        <div className="flex items-start justify-between px-4 py-4">
+        <div className="flex items-start justify-between px-4 py-4 font-roboto">
           <div className="flex space-x-20 items-center font-medium">
             <a href="/" text-2xl font-semibold>
               <img src={logo} alt="" />
