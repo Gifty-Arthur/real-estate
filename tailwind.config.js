@@ -6,13 +6,14 @@ export default {
   theme: {
     extend: {
       colors:{
-        customColor: '#E7C873'
+        customColor: '#E7C873',
+        primary: '#1A1A1A'
 
       
       },
 
       fontFamily: {
-        'roboto' :['Roboto", sans-serif'],
+        roboto :['Roboto', 'sans-serif'],
       }
       
     },

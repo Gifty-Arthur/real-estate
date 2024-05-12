@@ -1,47 +1,53 @@
-import React from 'react';
-import background from '../../assets/Images/background.png'
-const  Home= () => {
+import React from "react";
+import background from "../../assets/Images/background.png";
+import { AiOutlineSearch } from "react-icons/ai";
+const Home = () => {
   return (
-    
-      <div className='bg-cover bg-center min-h-screen w-[100vw] h-[100vh] flex flex-col items-center justify-center
-      'style={{ backgroundImage: `url(${background})`, }} > 
-   <div>
-   <button className=" w-30 h- 42.5 text-white-700 
-          hover:text-white border border-white 
-          
-          hover:bg-white
-          focus:outline-none 
-          focus:ring-white
-           font-medium rounded-full 
-           text-sm px-5 py-2 
-           text-center me-2 mb-2 
-           font-roboto
-           dark:border-white border-1
-           dark:text-white dark:hover:text-white
-            dark:hover:bg-customColor dark:focus:ring-white">
-            LET US GUIDE YOUR HOME</button>
-
-            
-   </div>
-
-    <div className='text-white text-4xl font-medium font-roboto '>
-      <h1>Discover a place you'll
-      
-        
-      </h1>
-      <h1 className='mx-20'>love to live</h1>
-    
-
-    </div>
-    <h1 className='mr-10 text-white text-sm'>sale</h1>
-
-
-      
-        
+    <div
+      className="bg-cover bg-center min-h-screen   flex flex-col items-center justify-center
+      "
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      <div className="mt-6">
+        <button
+          className=" w-[210px] h-[40px] text-white border 
+          border-white  rounded-full hover:bg-customColor font-light text-[13px] "
+        >
+          LET US GUIDE YOUR HOME
+        </button>
       </div>
 
-    
-  )
-}
+      <div className="text-white text-4xl font-roboto mt-7">
+        <h1 className="text-center font-medium">
+          Discover a place you'll <br /> love to live
+        </h1>
 
-export default Home
+        <div className="text-[17px] flex gap-10 justify-center font-regular mt-4">
+          <div className="underline">Sale</div>
+          <div className="">Rent</div>
+        </div>
+      </div>
+
+      {/* search bar */}
+
+      <form className="w-[440px] relative flex justify-center mt-4">
+        <div className="relative ">
+          <input
+            type="search"
+            placeholder="Enter Name, Keyword"
+            className="w-[652px] placeholder-bg-primary font-roboto
+          p-4 pl-12 rounded-full bg-white font-regular justify-center "
+          />
+          <button
+            className="translate-x-[-5px] absolute right-0 top-1
+          p-4 bg-customColor rounded-full "
+          >
+            <AiOutlineSearch />
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default Home;
