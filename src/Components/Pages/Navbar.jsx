@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Add Property  and the contact*/}
           <div className="md:flex space-x-6 items-center">
             <a href="/" className="text-white mx-px flex items-center">
-              <IoCallOutline className="w-[20px] h-[20px] 5hover:text-customColor" />
+              <IoCallOutline className="w-[20px] h-[20px] hover:text-customColor" />
 
               <span my-class="relative top-[-2px] text-sm font-roboto">
                 +6868588666
