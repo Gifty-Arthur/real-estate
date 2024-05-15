@@ -8,7 +8,7 @@ import { FaBed, FaBath, FaRegSquare } from "react-icons/fa6";
 function Listings() {
   return (
     <div className="bg-[#F6F8FA] h-[62rem] flex flex-col justify-center">
-      <div className="container ">
+      <div className="container  ">
         <div className="">
           <h1 className="text-center font-roboto text-medium text-[40px] text-primary">
             Homes For You
@@ -97,13 +97,15 @@ function Listings() {
                 src={img3}
                 alt=""
               />
-              <button className="absolute top-0 left-3 bg-tertiary text-white w-20 h-8 rounded-full mt-4 text-medium text-[13px] font-roboto ">
-                FOR RENT
-              </button>
-              <div className="relative">
-                <button className=" absolute top-0 right-3 bg-tertiary text-primary w-20 h-8 rounded-full mt-4 text-medium text-[13px] font-roboto ">
-                  FEATURED
+              <div className="absolute top-0 left-3 flex gap-x-2">
+                <button className=" bg-tertiary text-white w-20 h-8 rounded-full mt-4 text-medium text-[13px] font-roboto ">
+                  FOR RENT
                 </button>
+                <div>
+                  <button className="bg-tertiary text-primary w-20 h-8 rounded-full mt-4 text-medium text-[13px] font-roboto ">
+                    FEATURED
+                  </button>
+                </div>
               </div>
             </div>
 
