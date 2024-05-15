@@ -37,17 +37,54 @@ function Members() {
               </p>
             </div>
           </div>
-          <div ClassName="relative col-span-1 ">
+
+          <div className="relative col-span-1">
             <img
               className="rounded-2xl h-[24rem] w-[20rem]"
               src={Link4}
               alt=""
             />
-            <div className="absolute bottom-0 bg-black">
-              <p className="text-regular text-[15px] font-roboto">
-                8 Properties
+            <div className="absolute top-0 p-8">
+              <p className="text-white text-regular text-[15px] font-roboto">
+                2 Properties
               </p>
-              <p className="text-medium text-[21px] font-roboto">New York</p>
+              <p className="text-white text-medium text-[21px] font-roboto">
+                Chicago
+              </p>
+            </div>
+          </div>
+
+          <div className="relative col-span-1">
+            <img
+              className="rounded-2xl h-[24rem] w-[20rem]"
+              src={Link2}
+              alt=""
+            />
+            <div className="absolute top-0 p-8">
+              <p className="text-white text-regular text-[15px] font-roboto">
+                1 Property
+              </p>
+              <p className="text-white text-medium text-[21px] font-roboto">
+                Los Angeles
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid justify-center grid-cols-4 gap-10 mt-4 font-regular">
+          <div className="relative col-span-1">
+            <img
+              className="rounded-2xl h-[24rem] w-[20rem]"
+              src={Link6}
+              alt=""
+            />
+            <div className="absolute top-0 p-8">
+              <p className="text-white text-regular text-[15px] font-roboto">
+                0 Properties
+              </p>
+              <p className="text-white text-medium text-[21px] font-roboto">
+                San Diego
+              </p>
             </div>
           </div>
           <div className="relative col-span-1">
@@ -56,28 +93,14 @@ function Members() {
               src={Link2}
               alt=""
             />
-            <div className="absolute z-10">
-              <p className="text-regular text-[15px] font-roboto">
-                8 Properties
+            <div className="absolute top-0 p-8">
+              <p className="text-white text-regular text-[15px] font-roboto">
+                3 Properties
               </p>
-              <p className="text-medium text-[21px] font-roboto">New York</p>
+              <p className="text-white text-medium text-[21px] font-roboto">
+                Florida
+              </p>
             </div>
-          </div>
-        </div>
-        {/* <div className="grid justify-center grid-cols-4 gap-10 mt-4 font-regular">
-          <div>
-            <img
-              className="rounded-2xl h-[24rem] w-[20rem]"
-              src={Link6}
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="rounded-2xl h-[24rem] w-[20rem]"
-              src={Link1}
-              alt=""
-            />
           </div>
           <div className="relative col-span-2">
             <img
@@ -94,7 +117,7 @@ function Members() {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
