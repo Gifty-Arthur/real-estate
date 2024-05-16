@@ -4,11 +4,11 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Home = () => {
   return (
     <div
-      className="bg-cover bg-center min-h-screen   flex flex-col items-center justify-center
-      "
+      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover "
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="mt-6">
+      <div className="container">
+        <div className="mt-6"></div>
         <button
           className=" w-[210px] h-[40px] text-white border 
           border-white  rounded-full hover:bg-customColor font-light text-[13px] "
@@ -17,8 +17,8 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="text-white text-4xl font-roboto mt-7">
-        <h1 className="text-center font-medium">
+      <div className="text-4xl text-white font-roboto mt-7">
+        <h1 className="font-medium text-center">
           Discover a place you'll <br /> love to live
         </h1>
 
