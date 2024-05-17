@@ -3,6 +3,11 @@ import prop1 from "../../assets/Images/prop1.png";
 import prop2 from "../../assets/Images/prop2.png";
 import prop3 from "../../assets/Images/prop3.png";
 import prop4 from "../../assets/Images/prop4.png";
+import {
+  IoIosArrowForward,
+  IoIosArrowBack,
+  IoIosArrowRoundForward,
+} from "react-icons/io";
 const Blogex = () => {
   return (
     <div className="bg-[#F6F8FA] h-[62rem] flex flex-col justify-center">
@@ -20,15 +25,44 @@ const Blogex = () => {
         <div className="flex gap-5">
           <div className="flex flex-wrap w-1/2">
             <div className="w-full">
-              <img className="" src={prop1} alt="" />
-              <button className=" absolute  bg-customColor rounded-full w-[70px] h-[46px]">
-                hi
-              </button>
+              <div className="relative">
+                {/* styling for prop1 */}
+                <img className="" src={prop1} alt="" />
+                <button className="absolute flex items-center justify-center w-16 h-8 mt-4 text-white transform -translate-y-1/2 rounded-full bg-opacity-[.38] top-1/2 right-3 bg-primary">
+                  <IoIosArrowForward />
+                </button>
+
+                <button className="absolute flex items-center justify-center w-16 h-8 mt-4 text-white transform -translate-y-1/2 rounded-full bg-opacity-[.38] top-1/2 left-3 bg-primary">
+                  <IoIosArrowBack />
+                </button>
+              </div>
             </div>
-            <div className="flex justify-between">
+
+            {/* black image */}
+            <div className="relative flex justify-between">
               <img className="w-[48%]" src={prop3} alt="" />
+              <div className="absolute top-0 p-8 mt-4 left-3">
+                <h1 className="text-4xl text-white text-medium font-roboto">
+                  280+
+                </h1>
+                <div className="text-white text-[19px] text-roboto">
+                  <p>Properties</p>
+                </div>
+                <div className="mt-8 text-white text-[15px] text-regular text-roboto">
+                  <p>
+                    Explore our wide variety of properties <br />
+                    to find your dream home today
+                  </p>
+                </div>
+                <button className="bg-white rounded-full w-[51px] h-[51px] mt-10 absolute right-4 flex items-center justify-center transform -translate-x-1/2">
+                  <IoIosArrowRoundForward />
+                </button>
+              </div>
 
               <img className="w-[48%]" src={prop4} alt="" />
+              <div className=" text-primary">
+                <button>hi</button>
+              </div>
             </div>
           </div>
           <div className="relative w-1/2 ">
