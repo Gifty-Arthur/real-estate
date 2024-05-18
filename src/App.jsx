@@ -13,6 +13,7 @@ import Extension from "./Components/Pages/Extension";
 import Articles from "./Components/Pages/Articles";
 import Popular from "./Components/Pages/Popular";
 import Contact from "./Components/Pages/Contact";
+import Footer from "./Components/Pages/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Articles />
       <Popular />
       <Contact />
+      <Footer />
     </>
   );
 }
