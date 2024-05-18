@@ -10,7 +10,7 @@ const Home = () => {
       <div className="container">
         <div className="mt-6"></div>
         <button
-          className=" w-[210px] h-[40px] text-white border 
+          className=" w-[210px] h-[40px] text-white border ml-24 
           border-white  rounded-full hover:bg-customColor font-light text-[13px] "
         >
           LET US GUIDE YOUR HOME
