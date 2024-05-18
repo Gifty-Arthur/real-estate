@@ -22,11 +22,13 @@ function App() {
       <Pageex />
       <Extension />
       <Articles />
+      <Popular />
     </>
   );
 }
 import SubPage from "./Components/Pages/Extension";
 import Extension from "./Components/Pages/Extension";
 import Articles from "./Components/Pages/Articles";
+import Popular from "./Components/Pages/Popular";
 
 export default App;
