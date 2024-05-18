@@ -24,19 +24,19 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 p-4 mx-auto md:px-8 max-w-screen-2xl">
-        <div className="fixed flex items-start justify-between px-4 py-4 font-roboto ">
-          <div className="flex items-center space-x-20 font-medium">
-            <a href="/" text-2xl font-semibold>
-              <img src={logo} alt="" />
-            </a>
+      <nav className="fixed top-0 left-0 right-0 py-10 ">
+        <div className="flex justify-around">
+          <div className="">
+            <img src={logo} alt="" />
+          </div>
 
-            <ul className="hidden space-x-6 md:flex text">
+          <div className="">
+            <ul className="hidden space-x-6 md:flex">
               {navItems.map(({ link, path }) => (
                 <a
                   key={link}
                   href={path}
-                  className="flex items-center justify-between text-sm text-white hover:text-blue-300 "
+                  className="flex items-center justify-between font-roboto text-[16px] text-white hover:text-customColor "
                 >
                   {link}
                   <IoMdArrowDropdown className="mr-1" />
@@ -46,36 +46,34 @@ const Navbar = () => {
           </div>
 
           {/* Add Property  and the contact*/}
-          <div className="items-center space-x-6 md:flex">
-            <a href="/" className="flex items-center mx-px text-white">
-              <IoCallOutline className="w-[20px] h-[20px] hover:text-customColor" />
 
-              <span my-class="relative top-[-2px] text-sm font-roboto">
-                +6868588666
-              </span>
-              <CgProfile className="ml-4 h-[40px] w-[40px] hover:text-customColor" />
-            </a>
-            <button
-              className=" w-[148px] h-[42px] text-white border 
-            border-white font-medium rounded-full hover:bg-customColor "
-            >
+          <div className="flex gap-10">
+            <div className="flex flex-wrap gap-4">
+              <IoCallOutline className="w-[20px] h-[20px] text-white" />
+              <p className="font-medium text-white font-roboto text-[16px]">
+                +68 685 88666
+              </p>
+              <CgProfile className="w-[40px] h-[40px] text-white -mt-2  " />
+            </div>
+
+            <button className=" text-white text-[15px]  hover:bg-customColor font-roboto font-medium  w-[9rem] h-[2rem] bg-white rounded-[50px] bg-opacity-[.0] border-2">
               Add Property
             </button>
           </div>
+        </div>
 
-          {/* menu button only* display on mobile*/}
-          <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-lg text-white focus:outline-none focus:text-gray-300"
-            >
-              {isMenuOpen ? (
-                <HiMiniXMark className="w-6 h-6 test-customColor" />
-              ) : (
-                <IoMdMenu className="w-6 h-6 text-lg text-colorCustom" />
-              )}
-            </button>
-          </div>
+        {/* menu button only* display on mobile*/}
+        <div className="hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-lg text-white focus:outline-none focus:text-gray-300"
+          >
+            {isMenuOpen ? (
+              <HiMiniXMark className="w-6 h-6 test-customColor" />
+            ) : (
+              <IoMdMenu className="w-6 h-6 text-lg text-colorCustom" />
+            )}
+          </button>
         </div>
       </nav>
 

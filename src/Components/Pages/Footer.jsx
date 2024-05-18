@@ -38,7 +38,7 @@ function Footer() {
           </h3>
           <div className="flex mt-8 space-x-44 wrap">
             <p className="text-white text-[15px] font-roboto">Your e-mail</p>
-            <button className="bg-black bg-opacity-[.8] rounded-full w-[7rem] h-[2rem] flexgit justify-center items-center  ">
+            <button className="bg-black bg-opacity-[.8] rounded-full w-[7rem] h-[2rem] flex justify-center items-center  ">
               <p className="text-white">Send</p>
               <IoIosArrowRoundForward className="text-white" />
             </button>
