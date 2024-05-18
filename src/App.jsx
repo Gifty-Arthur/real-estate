@@ -20,8 +20,13 @@ function App() {
       <Blogex />
       <Pages />
       <Pageex />
+      <Extension />
+      <Articles />
     </>
   );
 }
+import SubPage from "./Components/Pages/Extension";
+import Extension from "./Components/Pages/Extension";
+import Articles from "./Components/Pages/Articles";
 
 export default App;
