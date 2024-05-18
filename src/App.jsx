@@ -9,6 +9,11 @@ import Navbar from "./Components/Pages/Navbar";
 import Pageex from "./Components/Pages/Pageex";
 import Pages from "./Components/Pages/Pages";
 
+import Extension from "./Components/Pages/Extension";
+import Articles from "./Components/Pages/Articles";
+import Popular from "./Components/Pages/Popular";
+import Contact from "./Components/Pages/Contact";
+
 function App() {
   return (
     <>
@@ -23,12 +28,9 @@ function App() {
       <Extension />
       <Articles />
       <Popular />
+      <Contact />
     </>
   );
 }
-import SubPage from "./Components/Pages/Extension";
-import Extension from "./Components/Pages/Extension";
-import Articles from "./Components/Pages/Articles";
-import Popular from "./Components/Pages/Popular";
 
 export default App;
